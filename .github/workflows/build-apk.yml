@@ -32,10 +32,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # 5. Native Code Bridge Initialize Karna
+      # 5. Native Code Bridge Initialize Karna (Fixed Web Dir)
       - name: Initialize Capacitor & Add Android
         run: |
-          npx cap init "GPS Odometer" "com.akash.gpsodometer" --web-dir=.
+          npx cap init "GPS Odometer" "com.akash.gpsodometer" --web-dir=www
           npx cap add android
 
       # 6. Strict Background GPS Permissions Inject Karna
@@ -69,4 +69,3 @@ jobs:
         with:
           name: GPS-Odometer-App
           path: android/app/build/outputs/apk/debug/app-debug.apk
-          
