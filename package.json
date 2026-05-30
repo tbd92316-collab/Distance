@@ -1,8 +1,8 @@
 {
-  "name": "gps-odometer",
+  "name": "ghost-browser",
   "version": "1.0.0",
-  "description": "Simple GPS Distance Tracker Webview App",
-  "main": "index.html",
+  "description": "Privacy Media Background Browser App",
+  "main": "www/index.html",
   "dependencies": {
     "@capacitor/core": "^6.0.0",
     "@capacitor/cli": "^6.0.0",
